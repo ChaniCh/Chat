@@ -8,7 +8,18 @@ import { IMessage } from 'src/app/models';
 })
 export class ChatComponent implements OnInit {
   @Output() onSendMessage: EventEmitter<string> = new EventEmitter()
-  @Input() messages: Array<IMessage> = [];
+ 
+  @Input() set messages(messages: Array<IMessage>) {
+    this._messages = messages.sort((x, y) => {
+      return x.timestamp - y.timestamp
+    })
+  }
+
+  private _messages: Array<IMessage> = [];
+
+  get messages() {
+    return this._messages
+  }
 
   constructor() { }
 
