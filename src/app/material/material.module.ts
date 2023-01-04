@@ -6,8 +6,20 @@ import { MatListModule } from '@angular/material/list';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { MatIconModule } from '@angular/material/icon';
 
-const modules: any = [MatToolbarModule, MatButtonModule, MatListModule, MatDialogModule, MatFormFieldModule, MatInputModule]
+
+const modules: any = [
+  MatToolbarModule, 
+  MatButtonModule, 
+  MatListModule, 
+  MatDialogModule, 
+  MatFormFieldModule, 
+  MatInputModule, 
+  ScrollingModule,
+  MatIconModule 
+]
 
 @NgModule({
   declarations: [],

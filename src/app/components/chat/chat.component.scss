@@ -1,0 +1,168 @@
+.chat {
+  &__scroller {
+    height: 445px;
+    width: 279px;
+    border: 1px solid black;
+  }
+  
+  &__message {
+    height: 50px;
+  }
+
+}
+
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$primary-color: #AA2331;
+$secondary-color: #191919;
+
+#container {
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  color: $primary-color;
+}
+.label {
+  color: $secondary-color;
+}
+
+// Content
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$primary-color: #AA2331;
+$secondary-color: #191919;
+
+#container {
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  color: $primary-color;
+}
+.label {
+  color: $secondary-color;
+}
+
+
+
+// Frame
+body {
+  margin: 0;
+}
+@media only screen and (min-device-width : 376px)  { 
+
+  $scale:  0.75;
+
+  $phone-width: 412px*$scale;
+  $phone-height: 852px*$scale;
+  $phone-radius: 67px*$scale;
+  $phone-face-width: 400px*$scale;
+  $phone-face-height: 840px*$scale;
+  $phone-face-radius: 61px*$scale;
+  $screen-width: 375px*$scale;
+  $screen-height: 667px*$scale;
+  $border-size: 1px;
+  $border-color: gray;
+
+  #phone {
+    position: relative;
+    width: $phone-width;
+    height: $phone-height;
+    border-radius: $phone-radius;
+    margin: 30px auto;
+  }
+  #phone-face {
+    width: $phone-face-width;
+    height: $phone-face-height;
+    margin: (($phone-height - $phone-face-height)/2 - $border-size) auto;
+    border-radius: $phone-face-radius;
+  }
+  #sensor {
+    width: 11px*$scale;
+    height: 11px*$scale;
+    border-radius: 5px*$scale;
+    margin: 15px*$scale auto 0 auto;
+  }
+  #camera-and-speaker {
+    width: 110px*$scale;
+    margin-top: 13px*$scale;
+    margin-left: 122px*$scale;
+    font-size: 0;
+  }
+  #camera {
+    $size: 18px*$scale;
+    display: inline-block;
+    vertical-align: middle;
+    width: $size;
+    height: $size;
+    border-radius: $size;
+  }
+  #speaker {
+    display: inline-block;
+    vertical-align: middle;
+    width: 66px*$scale;
+    height: 6px*$scale;
+    border-radius: 3px*$scale;
+    margin-left: 26px*$scale;
+  }
+  #screen {
+    background-color: white;
+    width: $screen-width;
+    height: $screen-height;
+    margin: 30px*$scale auto 0 auto;
+    overflow: hidden;
+  }
+  #content {
+    box-sizing: border-box;
+    width: 100%/$scale;
+    height: 100%/$scale;
+    transform-origin: top left;
+    transform: scale($scale, $scale);
+    -webkit-font-smoothing: antialised;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  #home-button {
+    $size: 59px*$scale;
+    width: $size;
+    height: $size;
+    margin: 17px*$scale auto 0 auto;
+    border-radius: $size;
+  }
+  #mute-button {
+    position: absolute;
+    left: -6px*$scale;
+    top: 111px*$scale;
+    height: 33px*$scale;
+    width: 6px*$scale;
+  }
+
+  #volume-up-button {
+    position: absolute;
+    left: -5px*$scale;
+    top: 181px*$scale;
+    height: 65px*$scale;
+    width: 5px*$scale;
+    border-radius: 5px*$scale 0 0 5px*$scale;
+  }
+
+  #volume-down-button {
+    position: absolute;
+    left: -5px*$scale;
+    top: 266px*$scale;
+    height: 65px*$scale;
+    width: 5px*$scale;
+    border-radius: 5px*$scale 0 0 5px*$scale;
+  }
+
+  #power-button {
+    position: absolute;
+    right: -5px*$scale;
+    top: 179px*$scale;
+    height: 65px*$scale;
+    width: 5px*$scale;
+    border-radius: 0 5px*$scale 5px*$scale 0;
+  }
+
+  .gray-border {
+    border: $border-size solid $border-color;
+    box-sizing: border-box;
+  }
+  
+}
